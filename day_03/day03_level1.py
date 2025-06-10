@@ -57,7 +57,7 @@ pausa()
 print("La longitud de la palabra python es de: ",len("python"), " caracteres")
 print("La longitud de la palabra dragon es de: ",len("dragon"), " caracteres")
 print("Es falso que dragon tenga mas caracteres que python: ",len('python') > len('dragon'))  # False
-print("Ahora se va a checar si |on| se encuentra en las 2 palabras (python y dragon)")
+print("Ahora se va a checar si °on° se encuentra en las 2 palabras (python y dragon)")
 print('python:', 'on' in 'python')  
 print('dragon:', 'on' in 'dragon')  
 print("Se va a checar si |jargon| esta en la frase |I hope this course is not full of jargon.|")
