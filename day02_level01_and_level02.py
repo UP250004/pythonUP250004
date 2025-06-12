@@ -1,15 +1,19 @@
-#Dia 2 programando en Python
-# Variables in Python
+#Dia 2 programando en Python (1-2)
+# Variables en Python
 import math
 import os
 
-first_name = 'Brian'
-last_name = 'Rubio'
-country = 'Mexico'
-city = 'Aguascalientes'
-age = 23
-is_married = False
-skills = ['HTML', 'CSS', 'Python', "C++"]
+first_name = 'Brian' #3
+last_name = 'Rubio' #4
+fullname = "Brian Odin Rubio Viramontes" #5
+country = 'Mexico' #6
+city = 'Aguascalientes' #7
+age = 23 #8
+year = 2002 #9
+is_married = False #10
+is_true = True #11
+is_light_on = False #12
+skills = ['HTML', 'CSS', 'Python', "C++"]#13
 person_info = {
     'firstname':first_name, 
     'lastname':last_name, 
