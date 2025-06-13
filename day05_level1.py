@@ -409,3 +409,10 @@ print("Primer mitad: ",x,"\n"," Segunda mitad: ",y)
 
 #### 2
 
+#### 3
+Paises = ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
+Potencias = Paises[:3]
+scandic = Paises[3:]
+print("Potencias: ",Potencias)
+print("Paises nordicos: ",scandic)
+#### 3
