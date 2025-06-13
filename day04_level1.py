@@ -141,3 +141,31 @@ lista = ["Coding","For","All"]
 resultado = " ".join(lista)
 print(resultado)
 ## 32
+pausa()
+## 33 Use the new line escape sequence to separate the following sentences.
+print("I am enjoying this challenge.\nI just wonder what is next.")
+## 33
+pausa()
+## 34 Use a tab escape sequence to write the following lines
+print("Name  \t        Age  \tCountry\t           City\nAsabeneh\t250   \tFinland   \tHelsinki")
+## 34
+
+## 35 Use the string formatting method to display the following:
+radius = 10
+pi = 3.14
+area = pi * radius ** 2
+string = 'The area of a circle with a radius {} is {:.2f}.'.format(radius, area) # 2 digits after decimal
+print(string)
+## 35
+pausa()
+## 36
+a = 8
+b = 6
+
+print('{} + {} = {}'.format(a, b, a + b))
+print('{} - {} = {}'.format(a, b, a - b))
+print('{} * {} = {}'.format(a, b, a * b))
+print('{} / {} = {:.2f}'.format(a, b, a / b)) 
+print('{} % {} = {}'.format(a, b, a % b))
+print('{} // {} = {}'.format(a, b, a // b))
+print('{} ** {} = {}'.format(a, b, a ** b))
