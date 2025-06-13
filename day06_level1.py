@@ -13,4 +13,34 @@ def pausa():
 
 ##### 1
 print("Creando tuple vacio...")
+Vacio = ()
+##### 1
+pausa()
+##### 2
+hermanas = ("Lety","Odette")
+hermanos = ("Joaquin","Ryan")
+print("Mis hermanas son: ",hermanas)
+print("Mis hermanos son: ",hermanos)
+##### 2
+pausa()
+##### 3
+total_hermanos = hermanas + hermanos
+print("Asi que tengo de hermanos a: ",total_hermanos)
+##### 3
+##### 4
+print("Que son en total: ",len(total_hermanos))
+##### 4
+pausa()
+##### 5
+total_hermanos = total_hermanos[:2]
+padres = ("Francelia","Ivan")
+familia = total_hermanos + padres
+print("Los miembros de mi familia son: ",familia)
+##### 5
+
+###### Ejercicios nivel 2...
+
+##### 1
+h_menor, h_media, mama, papa = familia
+print("Mi hermana menor es: ",h_menor)
 ##### 1
