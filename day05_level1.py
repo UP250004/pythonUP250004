@@ -406,3 +406,6 @@ x = countries[:mitad]
 # Mitad 2
 y= countries[mitad:]
 print("Primer mitad: ",x,"\n"," Segunda mitad: ",y)
+
+#### 2
+
