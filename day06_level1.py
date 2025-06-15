@@ -46,4 +46,16 @@ print("Mi hermana menor es: ",h_menor)
 print("Mi hermana media es: ",h_media)
 print("Mi mama es: ",mama)
 print("Mi papa es: ",papa)
+pausa()
 ##### 1
+
+##### 2
+frutas = ('platano', 'naranja', 'mango', 'limon', 'manzana')
+verduras = ('lechuga', 'tomate', 'pepino', 'zanahoria', 'cebolla')
+productos_animales = ('pollo', 'carne', 'pescado', 'huevo', 'queso')
+print("Frutas: ", frutas)
+print("Verduras: ", verduras)
+print("Productos animales: ", productos_animales)
+comida = frutas + verduras + productos_animales
+print("Comida: ", comida)
+##### 2
