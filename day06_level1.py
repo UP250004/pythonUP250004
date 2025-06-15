@@ -43,4 +43,7 @@ print("Los miembros de mi familia son: ",familia)
 ##### 1
 h_menor, h_media, mama, papa = familia
 print("Mi hermana menor es: ",h_menor)
+print("Mi hermana media es: ",h_media)
+print("Mi mama es: ",mama)
+print("Mi papa es: ",papa)
 ##### 1
