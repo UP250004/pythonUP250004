@@ -59,3 +59,44 @@ print("Productos animales: ", productos_animales)
 comida = frutas + verduras + productos_animales
 print("Comida: ", comida)
 ##### 2
+pausa()
+##### 3
+print("Ahora se va a convertir en lista el tuple comida...")
+comida_lista = list(comida)
+print("Comida como lista: ", comida_lista)
+##### 3
+pausa()
+##### 4
+def calculo_media(comida_lista):
+    longitud = len(comida_lista)
+
+    if longitud % 2 == 0:
+        mitad1 = comida_lista[longitud // 2 - 1]
+        mitad2 = comida_lista[longitud // 2]
+        medio = (mitad1 + mitad2)
+    else:
+        medio = comida_lista[longitud// 2]
+    return medio
+media = calculo_media(comida_lista)
+print("El valor medio de la lista comida es: ",media.capitalize())
+##### 4
+
+##### 5
+print("Ahora vamos a poner los primeros 3 elementos y los últimos 3 elementos de la lista comida en un nuevo tuple...")
+primeros_ultimos = tuple(comida_lista[:3] + comida_lista[-3:])
+print("Los primeros 3 y los últimos 3 elementos de la lista comida son: ",primeros_ultimos)
+###### 5
+pausa()
+##### 6
+print("Ahora vamos a borrar la lista comida...")
+del comida_lista
+print("Lista comida borrada.")
+##### 6
+pausa()
+##### 7
+print("Ahora se va a comprobar si Estonia y/o Iceland están en el turple de países...")
+nordic_countries = ('Denmark', 'Finland','Iceland', 'Norway', 'Sweden')
+print("Estonia está en los países nórdicos: ", 'Estonia' in nordic_countries)
+print("Iceland está en los países nórdicos: ", 'Iceland' in nordic_countries)
+##### 7
+pausa()
