@@ -30,3 +30,5 @@ print("El resultado de la operación es: ", round(resultado,2))
 
 
 #PROBLEMA MATEMÁTICO DE LA DISTANCIA EUCLIDIANA (PITÁGORAS)#
+
+help('keywords')
