@@ -1,4 +1,9 @@
 import math
+#NOMBRES#
+firstname = input("Dame tu primer nombre: ")
+lastname = input("Dame tu apellido: ")
+country = input("Dame tu pais de origen: ")
+print("Eres ", firstname, " ", lastname, ", ", "eres del pais de ", country, " y estas disfrutando de los 30 dias de programar en python...")
 #IDENTIFICACION DEL DATO INTRODUCIDO...#
 print("El dato 10 es un entero: ",type(10))          # Int
 print("El dato 9.8 es un float: ",type(9.8))        # Float
