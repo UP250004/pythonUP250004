@@ -14,3 +14,14 @@ age = [22, 19, 24, 25, 26, 24, 25, 24]
 print("La longitud del set \"it_companies\" es: ",len(it_companies))
 pausa()
 ####### 1
+
+###### 2
+print("Se va a agregar a \"Twitter\" en las compañias: ")
+t= {"Twitter"}
+it_companies = it_companies.union(t)
+print(it_companies)
+###### 2
+pausa()
+###### 3
+
+###### 3
