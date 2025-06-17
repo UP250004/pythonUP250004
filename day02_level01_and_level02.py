@@ -75,7 +75,7 @@ print("La suma de ", number_one, " y ", number_two, "es: ", total)
 print("La resta de ", number_one, " y ", number_two, "es: ", diff)
 print("La multiplicación de ", number_one, " y ", number_two, "es: ", product)
 print("La división de ", number_one, " y ", number_two, "es: ", round(division,2))
-print("La división modular de ", number_one, " y ", number_two, "es: ", remainder)
+print("El residuo de la división de ", number_one, " y ", number_two, "es: ", remainder)
 print("La potencia del numero ", number_one, " elevado a ", number_two, "es: ", exp)
 print("La floor division de ", number_one, " y ", number_two, "es: ", floor_division)
 
