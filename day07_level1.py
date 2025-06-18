@@ -23,5 +23,5 @@ print(it_companies)
 ###### 2
 pausa()
 ###### 3
-
+pausa()
 ###### 3
