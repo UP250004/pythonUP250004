@@ -21,10 +21,10 @@ if problema == 1:
 elif problema == 2:
     # Problema 2: Concatena el nombre y apellido y muéstralo en una sola línea
     # con un espacio entre nombre y apellido.
-    nombre = "Carlos "
+    nombre = "Carlos"
     apellido = "Ramirez"
     # Tu código aquí
-    completo = nombre + apellido
+    completo = nombre + " " + apellido
     print(completo)
 
 elif problema == 3:
