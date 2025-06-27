@@ -84,8 +84,10 @@ elif problema == 9:
     # Tu código aquí
     if n % 2 == 0:
         print(f"{n} es un número par.")
+        par = True
     else:
         print(f"{n} es un número impar.")
+        par = False
 elif problema == 10:
     # Problema 10: Calcula el Índice de Masa Corporal (IMC).
     # Fórmula: IMC = peso / (altura * altura)
