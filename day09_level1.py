@@ -18,5 +18,20 @@ elif edad < 18:
 else:
    print("Dato invalido...")
 ################# 1
+pausa()
+################# 2
+mi_edad = 23
+Edad = int(input("Dame tu edad: "))
+if edad > mi_edad:
+   resultado = edad - mi_edad
+   print(f"Tu eres unos {resultado} años mayor a mi...")
+elif edad < mi_edad:
+   resultado = mi_edad - edad
+   print(f"Tu eres unos {resultado} años menor a mi...")
+elif edad == mi_edad:
+   print(f"Tenemos la misma edad de {edad} años...")
+else:
+   print("Dato invalido...")
+################# 2
 
 ############# Ejercicios parte 1
