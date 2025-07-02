@@ -33,5 +33,16 @@ elif edad == mi_edad:
 else:
    print("Dato invalido...")
 ################# 2
+pausa()
+################# 3
+a = int(input("Dame el numero 1: "))
+b = int(input("Dame el numero 2: "))
+if a > b:
+   print(f"{a} es mayor a {b}")
+elif a < b:
+   print(f"{b} es mayor a {a}")
+else:
+   print("Datos invalido...")
+################# 3
 
 ############# Ejercicios parte 1
