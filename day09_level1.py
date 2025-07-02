@@ -44,5 +44,23 @@ elif a < b:
 else:
    print("Datos invalido...")
 ################# 3
-
+pausa()
 ############# Ejercicios parte 1
+
+############# Ejercicios parte 2
+
+################# 1
+calif = int(input("Dame la calificacion de un estudiante de la UPA del 0-100: "))
+if calif > 89 and calif < 101:
+   print(f"El alumno saco la calificación aprobatoria de {calif}, A ")
+elif calif > 69 and calif < 90:
+   print(f"El alumno saco la calificación aprobatoria de {calif}, B ")
+elif calif > 59 and calif < 70:
+   print(f"El alumno saco la calificación reprobaprobatoria de {calif}, C ")
+elif calif > 49 and calif < 60:
+   print(f"El alumno saco la calificación reprobaprobatoria de {calif}, D ")
+elif calif >= 0 and calif < 50:
+   print(f"El alumno saco la calificación reprobaprobatoria de {calif}, F ")
+################# 1
+
+############# Ejercicios parte 2
