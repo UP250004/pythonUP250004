@@ -85,6 +85,7 @@ elif problema == 9:
     if n % 2 == 0:
         print(f"{n} es un número par.")
         par = True
+        print(par)
     else:
         print(f"{n} es un número impar.")
         par = False
