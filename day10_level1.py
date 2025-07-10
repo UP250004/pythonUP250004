@@ -85,6 +85,7 @@ pausa()
 ############# 8
 print("\nA continuacion se va a imprimir numeros impares del 0-100...")
 for i in range(101):
+    ## otra forma de hacerlo: if i % 2 != 0:
     if i % 2 == 1:
         print(i)
 print("")
