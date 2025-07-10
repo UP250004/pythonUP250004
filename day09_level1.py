@@ -62,5 +62,72 @@ elif calif > 49 and calif < 60:
 elif calif >= 0 and calif < 50:
    print(f"El alumno saco la calificación reprobaprobatoria de {calif}, F ")
 ################# 1
-
+pausa()
 ############# Ejercicios parte 2
+# 1. Determinar la estación del año según el mes
+month = input("Ingresa el nombre de un mes (con la primera letra mayúscula): ")
+
+if month in ['Septiembre', 'Octubre', 'Noviembre']:
+    print("La estación es Otoño.")
+elif month in ['Diciembre', 'Enero', 'Febrero']:
+    print("La estación es Invierno.")
+elif month in ['Marzo', 'Abril', 'Mayo']:
+    print("La estación es Primavera.")
+elif month in ['Junio', 'Julio', 'Agosto']:
+    print("La estación es Verano.")
+else:
+    print("Mes no válido.")
+
+print("\n---\n")
+pausa()
+# 2. Revisar o agregar frutas a la lista
+fruits = ['banana', 'orange', 'mango', 'lemon']
+new_fruit = input("Ingresa el nombre de una fruta para revisar/agregar: ").lower()
+
+if new_fruit in fruits:
+    print("La fruta ya esta en la lista.")
+else:
+    fruits.append(new_fruit)
+    print("Fruta agregada. Lista actualizada:", fruits)
+
+print("\n---\n")
+pausa()
+# 3. Trabajar con el diccionario de persona
+person = {
+    'first_name': 'Asabeneh',
+    'last_name': 'Yetayeh',
+    'age': 250,
+    'country': 'Finland',
+    'is_marred': True,
+    'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address': {
+        'street': 'Space street',
+        'zipcode': '02210'
+    }
+}
+
+# Verificar si tiene clave 'skills' y mostrar habilidad del medio
+if 'skills' in person:
+    skills = person['skills']
+    middle_index = len(skills) // 2
+    print("Habilidad del medio:", skills[middle_index])
+
+    # Verificar si sabe Python
+    knows_python = 'Python' in skills
+    print("¿Sabe Python?", knows_python)
+
+    # Determinar tipo de desarrollador
+    if set(skills) == {'JavaScript', 'React'}:
+        print("He is a front end developer.")
+    elif {'Node', 'Python', 'MongoDB'}.issubset(skills):
+        print("He is a backend developer.")
+    elif {'React', 'Node', 'MongoDB'}.issubset(skills):
+        print("He is a fullstack developer.")
+    else:
+        print("Unknown title.")
+
+# Verificar si está casado y vive en Finlandia
+if person['is_marred'] and person['country'] == 'Finland':
+    full_name = person['first_name'] + " " + person['last_name']
+    print(f"{full_name} vive en Finlandia. El está casado.")
+pausa()
