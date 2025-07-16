@@ -76,14 +76,16 @@ def siete_numeros_aleatorios_unicos():
 
 
 print("ID aleatorio:", generar_id_usuario())
+pausa()
 
 print("\nGenerar múltiples IDs:")
 generar_ids_por_usuario()
-
+pausa()
 print("\nColor RGB aleatorio:", generar_color_rgb())
-
+pausa()
 print("\nColores Hexa:", generar_colores('hexa', 3))
 print("Colores RGB:", generar_colores('rgb', 3))
-
+pausa()
 print("\nLista barajada:", barajar_lista([1, 2, 3, 4, 5]))
+pausa()
 print("7 números únicos aleatorios:", siete_numeros_aleatorios_unicos())
