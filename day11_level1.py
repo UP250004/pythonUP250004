@@ -136,3 +136,20 @@ def paises_mas_poblados(top=10):
     poblados = sorted(countries_data, key=lambda x: x['population'], reverse=True)
     return [(pais['name'], pais['population']) for pais in poblados[:top]]
 #### Nivel 3
+
+#### Nivel 1
+
+#### 1
+print("Ejercicio 1, suma y resta por medio de una función definida...")
+a = int(input("Dame un número: "))
+b = int(input("Dame un número: "))
+print("La suma de los 2 numeros fue de: ", sumar_dos_numeros(a,b))
+#### 1
+pausa()
+#### 2
+print("Ejercicio 2, área de un circulo...")
+radio = int(input("Dame el radio de un circulo: "))
+print("El area del circulo es de: ", area_circulo(radio))
+#### 2
+pausa()
+#### Nivel 1
