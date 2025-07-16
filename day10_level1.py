@@ -94,9 +94,36 @@ pausa()
 ######### Nivel 1
 
 ######### Nivel 2
+############# 1
+x = 0 
+print("\nA continuacion se va a imprimir numeros del 0-100...")
+for i in range(101):
+    x = i + x
+    print(i)
+print("")
+print(f"La suma de los numeros es: {x}")
+pausa()
+############# 1
 
-######### 1
-
-######### 1
+############# 2
+x = 0
+y = 0
+print("\nA continuacion se va a imprimir numeros impares del 0-100...")
+for i in range(101):
+    ## otra forma de hacerlo: if i % 2 != 0:
+    if i % 2 == 1:
+        print(i)
+        x = x + i
+    elif i % 2 == 0:
+        y = y + i
+print("")
+print(f"La suma de los numeros impares es: {x}")
+print(f"La suma de los numeros pares es: {y}")
+pausa()
 
 ######### Nivel 2
+
+
+######### Nivel 3
+
+######### Nivel 3
