@@ -131,14 +131,14 @@ from data.countries_data import countries_data
 # 1. Extraer países que contienen "land"
 land_countries = [country for country in countries if 'land' in country]
 print("Países que contienen 'land':", land_countries)
-
+pausa()
 # 2. Invertir una lista de frutas usando un bucle
 fruits = ['banana', 'orange', 'mango', 'lemon']
 reversed_fruits = []
 for i in range(len(fruits)-1, -1, -1):
     reversed_fruits.append(fruits[i])
 print("Frutas en orden inverso:", reversed_fruits)
-
+pausa()
 # 3. Total de idiomas únicos
 unique_languages = set()
 for country in countries_data:
@@ -146,7 +146,7 @@ for country in countries_data:
         unique_languages.add(language)
 
 print("Total de idiomas únicos:", len(unique_languages))
-
+pausa()
 # 4. Diez idiomas más hablados
 from collections import Counter
 
@@ -159,7 +159,7 @@ most_spoken = language_counter.most_common(10)
 print("10 idiomas más hablados:")
 for lang, count in most_spoken:
     print(f"{lang}: {count} países")
-
+pausa()
 # 5. 10 países más poblados
 sorted_countries = sorted(countries_data, key=lambda x: x['population'], reverse=True)
 top_10_populated = sorted_countries[:10]
