@@ -14,10 +14,11 @@ def area_circulo(radio):
     from math import pi
     return pi * radio * radio
 
-def sumar_todos(*args):
-    if all(isinstance(i, (int, float)) for i in args):
-        return sum(args)
-    return "Todos los elementos deben ser números."
+def sumar_todos(datos):
+    if all(isinstance(i, (int, float)) for i in datos):
+        return sum(datos)
+    else:
+        return "Todos los elementos deben ser números."
 
 def celsius_a_fahrenheit(celsius):
     return (celsius * 9/5) + 32
@@ -151,5 +152,48 @@ print("Ejercicio 2, área de un circulo...")
 radio = int(input("Dame el radio de un circulo: "))
 print("El area del circulo es de: ", area_circulo(radio))
 #### 2
+pausa()
+#### 3
+print("Ejercicio 3, suma de números...")
+datos = [0]
+cantidad = int(input("Dame la cantidad de numeros a sumar: "))
+for i in range(cantidad):
+    x = int(input(f"Dame el numero {i + 1} para agregarlo a la suma: "))
+    datos.append(x)
+print("La suma total de los numeros es de: ", sumar_todos(datos))
+#### 3
+pausa()
+#### 4
+print("Ejercicio 4, Celsius a Fahrenheit...")
+
+calor = int(input("Dame los grados Celsius a convertir a Fahrenheit: "))
+print(f"{calor} grados Celsius son {celsius_a_fahrenheit(calor)} grados Fahrenheit")
+#### 4
+pausa()
+
+#### 5
+print("Ejercicio 5, estación del año...")
+mes = input("Dime un mes del año: ")
+print(f"El mes {mes} pertenece a la estación {determinar_estacion(mes)}")
+#### 5
+pausa()
+
+#### 6
+print("Ejercicio 6, calculo de pendiente [(y2-y1) / (x2 - x1)]...")
+x1 = int(input("Dame x1: "))
+y1 = int(input("Dame y1: "))
+x2 = int(input("Dame x2: "))
+y2 = int(input("Dame y2: "))
+print(f"La pendiente de las coordenadas ({x1},{y1}) y ({x2},{y2}) da como resultado: {calcular_pendiente(x1,y1,x2,y2)}")
+#### 6
+pausa()
+
+#### 7
+print("Ejercicio 7, ecuación cuadrática (ax^2 + bx + c = 0)...")
+a = int(input("Dame a: "))
+b = int(input("Dame b: "))
+c = int(input("Dame c: "))
+print(f"El resultado de la ecuacion es: {resolver_ecuacion_cuadratica(a,b,c)}")
+#### 7
 pausa()
 #### Nivel 1
