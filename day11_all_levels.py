@@ -68,16 +68,28 @@ def agregar_elemento(lista, item):
 def eliminar_elemento(lista, item):
     if item in lista:
         lista.remove(item)
+    else: 
+        print("Dato erroneo, no existe dicho elemento en la lista...")
     return lista
 
 def suma_de_numeros(n):
-    return sum(range(n + 1))
+    if all(isinstance(i, (int, float)) for i in datos):
+        return sum(range(n + 1))
+    else:
+        return "Todos los elementos deben ser números."
+    
 
 def suma_impares(n):
-    return sum(i for i in range(n + 1) if i % 2 != 0)
+    if all(isinstance(i, (int, float)) for i in datos):
+        return sum(i for i in range(n + 1) if i % 2 != 0)
+    else:
+        return "Todos los elementos deben ser números."
 
 def suma_pares(n):
-    return sum(i for i in range(n + 1) if i % 2 == 0)
+    if all(isinstance(i, (int, float)) for i in datos):
+        return sum(i for i in range(n + 1) if i % 2 == 0)
+    else:
+        return "Todos los elementos deben ser números."
 ###### Nivel 1
 
 ###### Nivel 2
@@ -198,11 +210,53 @@ print(f"El resultado de la ecuacion es: {resolver_ecuacion_cuadratica(a,b,c)}")
 pausa()
 #### 8
 lista = [0]
-cantidad = int(input("Dame la cantidad de numeros a considerar en la lista: "))
+cantidad = int(input("Dame la cantidad de objetos a considerar en la lista: "))
 for i in range(cantidad):
-    x = int(input(f"Dame el numero {i + 1} para agregarlo a la suma: "))
+    x = input(f"Dame el objeto {i + 1} para agregarlo a la lista: ")
     lista.append(x)
 print("Los elementos de la lista: ", imprimir_lista(lista))
 #### 8
 pausa()
+##### 9
+print("A continuación se va a invertir la lista previa...")
+print(invertir_lista(lista))
+##### 9
+pausa()
+##### 10
+print("A continuación se va a capitalizar los elementos de la lista previa...")
+print(capitalizar_lista(lista))
+##### 10
+pausa()
+##### 11
+print("A continuación se va a capitalizar los elementos de la lista previa...")
+print(capitalizar_lista(lista))
+##### 11
+pausa()
+##### 12
+item = input("Agrega un elemento a la lista: ")
+print("La lista quedo como: ",agregar_elemento(lista,item))
+##### 12
+##### 13
+item = input("Agrega un elemento a la lista: ")
+print("La lista quedo como: ",agregar_elemento(lista,item))
+##### 13
+pausa()
+#### 14
+n = [0]
+cantidad = int(input("Dame la cantidad de numeros a sumar: "))
+for i in range(cantidad):
+    x = int(input(f"Dame el numero {i + 1} para agregarlo a la suma: "))
+    n.append(x)
+print("Los numeros ingresados fueron: ",n)
+print("La suma total de los numeros es de: ", suma_de_numeros(n))
+#### 14
+### 15
+print(f"Suma de numeros impares:  {suma_impares(n)}")
+### 15
+### 16
+print(f"Suma de numeros pares:  {suma_pares(n)}")
+### 16
+pausa()
 #### Nivel 1
+
+#### Nivel 2
