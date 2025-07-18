@@ -248,5 +248,5 @@ pausa()
 print("Tomando en cuenta los datos de countries_data, se va a sacar los 10 idiomas más hablados en el mundo...")
 print(idiomas_mas_hablados())
 print("Tomando en cuenta los datos de countries_data, se va a sacar los 10 paises más poblados en el mundo...")
-print(idiomas_mas_hablados())
+print(paises_mas_poblados())
 #### Nivel 3
