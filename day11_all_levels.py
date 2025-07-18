@@ -74,63 +74,35 @@ def eliminar_elemento(lista, item):
 
 def suma_de_numeros(n):
     if all(isinstance(i, (int, float)) for i in datos):
-        return sum(range(n + 1))
+        return sum(n)
     else:
         return "Todos los elementos deben ser números."
     
 
 def suma_impares(n):
     if all(isinstance(i, (int, float)) for i in datos):
-        return sum(i for i in range(n + 1) if i % 2 != 0)
+        return sum(i for i in n if i % 2 != 0)
     else:
         return "Todos los elementos deben ser números."
 
 def suma_pares(n):
     if all(isinstance(i, (int, float)) for i in datos):
-        return sum(i for i in range(n + 1) if i % 2 == 0)
+        return sum(i for i in n if i % 2 == 0)
     else:
         return "Todos los elementos deben ser números."
 ###### Nivel 1
 
 ###### Nivel 2
 def pares_e_impares(n):
-    pares = len([i for i in range(n + 1) if i % 2 == 0])
-    impares = n + 1 - pares
+    pares = len([i for i in n if i % 2 == 0])
+    impares = len([i for i in n if i % 2 != 0])
     print(f"El número de pares es {pares}.")
     print(f"El número de impares es {impares}.")
 
 def factorial(n):
     from math import factorial
-    return factorial(n)
+    return factorial(sum(n))
 
-def esta_vacio(valor):
-    return not bool(valor)
-
-def calcular_media(lista):
-    return sum(lista) / len(lista)
-
-def calcular_mediana(lista):
-    lista = sorted(lista)
-    n = len(lista)
-    if n % 2 == 0:
-        return (lista[n//2 - 1] + lista[n//2]) / 2
-    return lista[n//2]
-
-def calcular_moda(lista):
-    from collections import Counter
-    c = Counter(lista)
-    return c.most_common(1)[0][0]
-
-def calcular_rango(lista):
-    return max(lista) - min(lista)
-
-def calcular_varianza(lista):
-    media = calcular_media(lista)
-    return sum((x - media)**2 for x in lista) / len(lista)
-
-def calcular_std(lista):
-    from math import sqrt
-    return sqrt(calcular_varianza(lista))
 ###### Nivel 2
 
 
@@ -209,7 +181,7 @@ print(f"El resultado de la ecuacion es: {resolver_ecuacion_cuadratica(a,b,c)}")
 #### 7
 pausa()
 #### 8
-lista = [0]
+lista = []
 cantidad = int(input("Dame la cantidad de objetos a considerar en la lista: "))
 for i in range(cantidad):
     x = input(f"Dame el objeto {i + 1} para agregarlo a la lista: ")
@@ -260,3 +232,21 @@ pausa()
 #### Nivel 1
 
 #### Nivel 2
+#### 1
+print(f"Se va a contar los numeros pares e impares de la lista: {n}")
+print(pares_e_impares(n))
+#### 1
+#### 2
+print(f"Se va a sacar el factorial de la lista {n}")
+print(f"El factorial es: {factorial(n)}")
+#### 2
+pausa()
+#### 4
+#### Nivel 2
+
+#### Nivel 3
+print("Tomando en cuenta los datos de countries_data, se va a sacar los 10 idiomas más hablados en el mundo...")
+print(idiomas_mas_hablados())
+print("Tomando en cuenta los datos de countries_data, se va a sacar los 10 paises más poblados en el mundo...")
+print(idiomas_mas_hablados())
+#### Nivel 3
