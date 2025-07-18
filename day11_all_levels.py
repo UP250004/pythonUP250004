@@ -196,4 +196,13 @@ c = int(input("Dame c: "))
 print(f"El resultado de la ecuacion es: {resolver_ecuacion_cuadratica(a,b,c)}")
 #### 7
 pausa()
+#### 8
+lista = [0]
+cantidad = int(input("Dame la cantidad de numeros a considerar en la lista: "))
+for i in range(cantidad):
+    x = int(input(f"Dame el numero {i + 1} para agregarlo a la suma: "))
+    lista.append(x)
+print("Los elementos de la lista: ", imprimir_lista(lista))
+#### 8
+pausa()
 #### Nivel 1

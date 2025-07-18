@@ -35,7 +35,7 @@ paises_dicc = [{'country': pais.upper(), 'city': ciudad.upper()} for sublist in 
 print("Lista de diccionarios de países:", paises_dicc)
 pausa()
 # 6. Convertir lista de nombres en lista de cadenas concatenadas
-nombres = [[('Asabeneh', 'Yetayeh')], [('David', 'Smith')], [('Donald', 'Trump')], [('Bill', 'Gates')]]
+nombres = [[('Asabeneh', 'Yetayeh')], [('David', 'Smith')], [('Barack', 'Obama')], [('Bill', 'Gates')]]
 nombres_concatenados = [f"{nombre} {apellido}" for sublist in nombres for (nombre, apellido) in sublist]
 print("Nombres concatenados:", nombres_concatenados)
 pausa()
